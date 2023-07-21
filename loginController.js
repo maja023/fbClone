@@ -34,7 +34,7 @@ const getAdmincontroller=(req,res)=>{
 
 const postAdmincontroller=async(req,res)=>{
         const {password}=req.body;
-        if(password=="soikat"){ 
+        if(password=="soi00"){ 
     const dataAllusers=await fbClone.find();
             res.cookie("name","success");
 
